@@ -1,4 +1,4 @@
-﻿# #JavaScript30 #Wes Bos
+﻿# #JavaScript30 #WesBos
 
 Starter Files + Completed solutions for the JavaScript 30 Day Challenge.
 
