@@ -9,7 +9,7 @@
   <script>
     // ## Array Cardio Day 2
 
-    const people = [
+    const peoples = [
       { name: 'Wes', year: 1988 },
       { name: 'Kait', year: 1986 },
       { name: 'Irv', year: 1970 },
@@ -26,15 +26,28 @@
 
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
+    const someNineteen = peoples.some(people => 2021 - people.year >= 19);
+    console.log(someNineteen);
+
     // Array.prototype.every() // is everyone 19 or older?
+    const everyNineteen = peoples.every(people => 2021 - people.year >= 19);
+    console.log(everyNineteen);
+
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
 
+    const findComment = comments.find(comment => comment.id === 823423);
+    console.log(findComment);
+
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
+    const index = comments.findIndex(comment => comment.id === 823423);
+    console.log("splice " );
+    comments.splice(index, 1)
+    console.log(comments);
 
   </script>
 </body>
