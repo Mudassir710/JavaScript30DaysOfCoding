@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+
+  let keysPressed = [];
+  let  secretCode = 'atika';
+  function handleKeyDown(e) {
+
+    keysPressed.push(e.key);
+    console.log(-secretCode.length - 1);
+    keysPressed.splice(-secretCode.length - 1, keysPressed.length - secretCode.length);
+    if (keysPressed.join('').includes(secretCode)) {
+      cornify_add();
+    }
+  }
+  window.addEventListener('keydown', handleKeyDown);
+</script>
+</body>
+</html>
